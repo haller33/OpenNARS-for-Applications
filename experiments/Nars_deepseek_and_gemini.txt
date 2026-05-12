@@ -1,0 +1,67 @@
+// 1. Chair paradox
+<chair --> [sit_on]>
+<(&&, rock, <rock --> [used_as_chair]>) ==> <rock --> chair>>
+
+// 2. Knowing that P (JTB with disagreement)
+<know(P) <-> (&&, believe(P), true(P), justification(P))>
+<(justification_clause * people) --> (--, [agree])>
+
+// 3. Sorites paradox (heap)
+<(&/, <#1 --> heap>, <#1 --> [remove_grain]>) =/> <#1 --> heap>>
+<(&/, <#1 --> heap>, <(&/, <#1 --> [remove_grain]>, <#1 --> [remove_grain]>)>) =/> (--, <#1 --> heap>)>
+
+// 4. Bachelor and Pope
+<bachelor <-> (unmarried & man)>
+<{pope} --> (unmarried & man)>
+<{pope} --> bachelor>. %0.00;0.90%
+
+// 5. Water on Earth vs Twin Earth
+<(water * {earth}) --> [is_h2o]>
+<(water * {twin_earth}) --> [is_xyz]>
+<((water * {twin_earth}) --> [is_xyz]) ==> <(water * {twin_earth}) --> water>>. %0.50;0.90%
+
+// 6. Game – family resemblance
+<chess --> game>
+<ring_around_the_rosy --> game>
+<kicking_stone --> game>
+
+// 7. Red under blue light
+<tomato --> [red]>
+<(&&, tomato, blue_light) ==> (--, <tomato --> [red]>)>
+
+// 8. Square circle
+<square_circle --> (square & circle)>. %0.00;0.99%
+<(&&, square_circle, poem_context) ==> [exists]>
+
+// 9. Tall depends on age
+<(&&, <#1 --> 5yo>, <#1 --> [1.2m]>) ==> <#1 --> [tall]>>
+<(&&, <#1 --> 30yo>, <#1 --> [1.2m]>) ==> <#1 --> [short]>>
+
+// 10. Life definition with counterexamples
+<life <-> ([grow] & [reproduce] & [metabolize])>
+<{mule} --> life>. %1.00;0.90%
+<{mule} --> [reproduce]>. %0.00;0.90%
+<fire --> life>. %0.00;0.90%
+
+// 11. Bird exceptions
+<bird --> ([feathered] & [fly])>
+<penguin --> (bird & (--, [fly]))>
+<bat --> ([fly] & (--, bird))>
+
+// 12. Justice depends on theory
+<justice <-> [give_due]>
+<(justice * theory) --> [dependent]>
+
+// 13. Understanding vs mimicry
+<understand <-> [correct_usage]>
+<parrot --> [correct_usage]>
+<parrot --> [understand]>. %0.00;0.90%
+
+// 14. Zombie (philosophical vs Hollywood)
+<zombie_philosophical --> (human_physical & (--, [conscious]))>
+<zombie_hollywood --> (human_corpse & [hungry])>
+<zombie_hollywood =/= zombie_philosophical>
+
+// 15. Proof relative to audience
+<proof <-> (&&, argument, [convincing])>
+<([convincing] * audience) --> [relative]>

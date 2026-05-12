@@ -1,0 +1,776 @@
+< (amor * {sentimento}) --> amizade >.
+< (amor * {relacao}) --> afeicao >.
+< (amor * {desejo}) --> paixao >.
+< (amor * {grande_desejo}) --> grande_amor >.
+< (amor * {poetico}) --> desejo >.
+< (amor * {poetico}) --> vontade >.
+< (amorge * {lugar}) --> efeso >.
+< (amorgos * {lugar}) --> ilha_esporades >.
+<(conssurro * {ato}) --> cochichar>.
+<(conssurro * {sujeito}) --> alguem>.
+<(conssurro * {objeto}) --> alguem>.
+<conssurro ==> <(&&, <#1 --> conssurro>, <#2 --> alguem>) --> cochichar>.
+< (battuo * {transitivo}) --> bater >.
+< (battuo * {intransitivo}) --> bater_se >.
+< (battuo * {esgrima}) --> cruzar_armas >.
+< (battuo * {sentido_obsceno}) --> ter_relacoes >.
+< (battuo * {contexto_obsceno}) <-> (relacoes * {intimas}) >.
+< (asilo * {lugar}) --> refugio >.
+< (asilo * {lugar}) --> templo >.
+< (asilo * {lugar}) --> asilo >.
+< (antecessus * {participio_passado}) --> (participio_passado * {antecedo}) >.
+< (antecessus * {substantivo_masculino}) --> antecipacao >.
+< (adipatus * {proprio}) --> gordo >.
+<(adipatus * {figurado}) --> pesado>.
+< (adipatus * {estilo}) --> grosseiro >.
+< (captio * {posse}) --> açao_de_tomar_posse >.
+< (captio * {engano}) --> cilada >.
+< (captio * {figura}) --> sutileza >.
+< (captio * {modo}) --> capciosamente >.
+< (captiosus * {caracteristica}) --> capcioso >.
+< (captiosus * {sofistico}) --> sofistico >.
+< (captiosa * {sofismas}) --> sofismas >.
+< (Cassius * {nome}) --> Cassio >.
+< (Cassio * {historico}) --> (homem & (assassino * {vitoria})) >.
+< (Cassius * {poeta}) --> (homem & (poeta * {Parma})) >.
+< (avis * {ave}) --> (ave * {Ciconia}) >.
+< (avis * {pressagio}) --> (auspicio * {signo}) >.
+<(Britannia * {geografia}) --> (ilha * {Europa})>.
+<(Britannia * {geografia}) --> (localizado * {NO})>.
+<(populacao_celtica * (habita)) --> Britannia>.
+<(populacao_celtica * Britannia) --> (comportamento * (semelhante_ao_gaulês))>.
+<(romanos * (conquistou)) --> Britannia>.
+<(romanos * (estabeleceu)) --> (regiao * (sul_e_centro_de_Britannia))>.
+<(romanos * (conquistou_Britannia)) ==> (tempo_de * (Claudio))>.
+< (auguror * {sentido proprio}) --> predizer_diante_de_augurios >.
+< (auguror * {sentido proprio}) --> (verbo * {diante_de_augurios}) >.
+< (auguror * {sentido figurado}) --> predizer >.
+< (auguror * {sentido figurado}) --> augurar >.
+< (auguror * {sentido figurado}) --> pressagiar >.
+< (auguror * {sentido figurado}) --> julgar >.
+< (auguror * {sentido figurado}) --> pensar >.
+< (auguror * {sentido figurado}) --> supor >.
+< (auguror * {sentido figurado}) --> conjecturar >.
+<age --> interjeicao>.
+<agedincum --> capital>.
+<agelastus --> homem>.
+<agellus --> campo_pequeno>.
+<agema --> corpo_militar>.
+<agenor --> antepassado>.
+<agenoreus --> relativo_a_agenor>.
+<agenoridae --> descendentes_de_agenor>.
+<agenorides --> agenoridas>.
+<ager --> campo>.
+<agesilaus --> rei_de_esparta>.
+<agesimbrotus --> almirante_rodio>.
+<agesipolis --> lacedemonio>.
+<agessinates --> povo_da_aquitania>.
+<(Hasdrubal * {geral_cartagines}) --> general>.
+<(Hasdrubal * {pessoa_historica}) --> Asdrubal>.
+<(Hasdrubal * {nome_proprio}) --> Asdrubal>.
+<(Hasdrubal * {geral_cartagines}) --> (homem & (generais_cartagineses))>.
+< (assentor * {sentido proprio}) --> (sentir & (duração * {intensiva})) >.
+< (assentor * {sentido proprio}) --> (ser_da_mesma_opiniao * {aprovar}) >.
+< (assentor * {sentido figurado}) --> lisonjear >.
+<(assentor * {sentido figurado}) --> adular>.
+< (assentor * {Cicero}) --> (assentor * {sentido proprio}) & (<Cicero --> (Fam. * {7,12,2}))) >.
+< (assentor * {Cicero}) --> (assentor * {sentido figurado}) & (<Cicero --> (Br. * {296})) >.
+<(Vergilius * {poeta}) --> (homem & ({nome} --> Vergilius))>.
+<(Vergilius * {poeta}) --> (autor * {Eneida})>.
+<(Vergilius * {poeta}) --> (autor * {Bucolicas})>.
+<(Vergilius * {poeta}) --> (autor * {Georgicas})>.
+<(Vergilius * {poeta}) --> (Públio_Vergílio_Marão)>.
+<  <Vergilius --> príncipe_dos_poetas_romanos> >.
+< (Senones * {Gália Lionesa}) --> habitante >.
+< (Senones * {Gália Cisalpina}) --> povo gaulês >.
+< (Lesbus * {subs_pr_f}) --> (habitante * {Lesbos}) >.
+< (apparatus * {verbo}) --> preparado >.
+< (apparatus * {verbo}) --> provido >.
+< (apparatus * {verbo}) --> guarnecido >.
+< (apparatus * {adjetivo}) --> suntuoso >.
+< (apparatus * {adjetivo}) --> magnificente >.
+< (apparatus * {subs_m}) --> preparacao >.
+< (apparatus * {subs_m}) --> preparativo >.
+< (apparatus * {subs_m}) --> petrechos >.
+< (apparatus * {subs_m}) --> aparelhos >.
+< (apparatus * {subs_m}) --> equipagem >.
+< (apparatus * {subs_m}) --> tropas >.
+< (apparatus * {subs_m}) --> suntuosidade >.
+< (apparatus * {subs_m}) --> pompa >.
+< (apparatus * {subs_m}) --> aparato >.
+< (apparatus * {lingua_ret_orica}) --> pompa_de_estilo >.
+< (adsiduus * {qualidade}) --> regular >.
+<(adsiduus * {qualidade}) --> constante>.
+< (adsidua * {qualidade}) --> regular >.
+< (adsidua * {qualidade}) --> constante >.
+< (bacchor * {sentido proprio}) --> festejarBaco >.
+< (bacchor * {sentido proprio}) --> celebrarMisteriosDeBaco >.
+< (bacchor * {sentido figurado}) --> estarExaltado >.
+< (bacchor * {sentido figurado}) --> estarForaDeSi >.
+< (bacchor * {sentido figurado}) --> estarEmbriagado >.
+< (bacchor * {sentido figurado}) --> agitarSeFuriosamente >.
+< (bacchor * {sentido figurado}) --> enfurecerSe >.
+< (bacchor * {sentido figurado}) --> agitarSeDesenfreadamente >.
+< (bacchor * {sentido figurado}) --> gritar >.
+< (bacchor * {sentido figurado}) --> fazerRuidoComoAsBacantes >.
+< (bacchor * {passivo}) --> serPercorridoPelAsBacantes >.
+< (bacchor * {passivo}) --> serFrequentadoPelAsBacantes >.
+< (bacchor * {passivo}) --> errar >.
+< (bacchor * {passivo}) --> espalharSe >.
+< (captura * {acao}) --> tomada >.
+< (captura * {resultado}) --> presa >.
+< (captura * {lucro}) --> ganho >.
+< (captura * {remuneracao}) --> salario >.
+<(axilla * {sobrenome_romano}) --> sobrenome>.
+< (axilla * {anatomia}) --> axila >.
+< (abscondo * {esconder}) --> ocultar >.
+< (abscondo * {poetico}) --> perder_de_vista >.
+< (abscondo * {dissimular}) --> dissimular >.
+< (abscondo * {astros}) --> desaparecer >.
+<(arithmetica * {conhecimento}) --> aritmética>.
+<(arithmetica * {disciplina}) --> matemática>.
+< (arithmetica * {termo}) <-> aritmética >.
+< (antepono * {sentido proprio}) --> por adiante >.
+< (antepono * {sentido proprio}) --> antepor >.
+< (antepono * {sentido figurado}) --> preferir >.
+< (antepono * {sentido figurado}) --> dar preferencia a >.
+<(Bastarnae * {etnia}) --> povo>.
+<(Bastarnae * {origem}) --> Plinio>.
+<(Bastarnae * {livro}) --> H_Nat>.
+< (Bastarnae * {pagina}) --> 4_100 >.
+< (calamitas * {sentido proprio}) --> (calamidade & flagelo & desastre & desgraça) >.
+< (calamitas * {agricultura}) --> (flagelo * {colheita}) >.
+< (calamitas * {agricultura}) --> (perda * {colheita}) >.
+< (calamitas * {causa}) --> (geada & doenca) >.
+<artum --> arctum>.
+<  (Utica * {localização}) --> (pôrto * {Tingitânia}) >.
+<  (Utica * {localização}) --> (África) >.
+< (adesurio * {estado}) --> (homem & (==>, ({estomago} * #1) --> vazio)) >.
+<(amare * {adv}) --> amargamente>.
+<(amarus * {sentido_fisico}) --> amargo>.
+<(amarus * {sentido_figurado}) --> penoso>.
+<(amare * {sentido_fisico}) --> amargamente>.
+<(amans * {participio_presente}) --> amante>.
+<(amans * {adjetivo}) --> que_ama>.
+<(amantor * {adv}) --> amigavelmente>.
+<(amanuensis * {subs_m}) --> secretario>.
+<(amalus * {subs_m}) --> amano>.
+<(amaranthus * {subs_m}) --> amaranto>.
+<(amaritudo * {subs_f}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amalthea * {subs_pr_f}) --> cabra>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amare * {v_tr}) --> amar>.
+<(amans * {subs_m}) --> amante>.
+<(amare * {adv}) --> amargamente>.
+<(amaritudo * {subs_f}) --> amargor>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+<(amatus * {part_pass}) --> amado>.
+<(amare * {v_tr}) --> amar>.
+<(amaracus * {subs_n}) --> essencia_de_manjerona>.
+<(amarantus * {subs_m}) --> amaranto>.
+<(amor * {subs_m}) --> amor>.
+<(amoris * {subs_m}) --> amor>.
+<(amorosus * {adj}) --> amoroso>.
+<(amabilis * {adj}) --> amavel>.
+<(amorosus * {adj}) --> amoroso>.
+<(amor * {subs_m}) --> amor>.
+<(amore * {subs_m}) --> amor>.
+<(amarus * {adj}) --> amargo>.
+<(amaror * {subs_m}) --> amargor>.
+<(amaryllis * {subs_pr_f}) --> amarilis>.
+<(amarynthis * {subs_pr_f}) --> amarintide>.
+<(amalthea * {subs_pr_f}) --> amalteia>.
+<(amandatio * {subs_f}) --> afastamento>.
+<(amandatus * {part_pass}) --> afastado>.
+<(amando * {v_tr}) --> afastar>.
+<(amantia * {subs_pr_f}) --> amancia>.
+<(amantiani * {subs_loc_m}) --> amantinos>.
+<(amantius * {comp}) --> mais_amavel>.
+< (Evadne * {substantivo}) --> Euadne >.
+< (Evado * {sentido proprio}) --> (intr & (evasao, escala, fuga)) >.
+< (Evado * {sentido figurado}) --> (terminar & (acabar, realizar)) >.
+< (Evado * {transitivo}) --> (evitar & (fuga, transposicao)) >.
+< (Evagatio * {acao}) --> (errancia & (andar errante)) >.
+< (Evagor * {intransitivo}) --> (correr & (afastar, estender)) >.
+< (Evagor * {transitivo}) --> (exceder & (ultrapassar)) >.
+< (Evalidus * {adjetivo}) --> (forte & (robusto)) >.
+< (Evalui * {verbo}) --> (evalesco) >.
+< (Evander * {substantivo}) --> (Euander) >.
+< (Evanesco * {verbo}) --> (desaparecer & (dissipar, evaporar)) >.
+< (Evanidus * {adjetivo}) --> (desaparecido & (extinto)) >.
+< (Evaporatio * {substantivo}) --> (evaporacao) >.
+< (Evasi * {verbo}) --> (evado & (perfeito)) >.
+< (Evasto * {verbo}) --> (evastar & (destruir, assolar)) >.
+< (Evasus * {participio}) --> (evado & (passado)) >.
+< (Evax * {substantivo}) --> (euax) >.
+< (addenseo * {verbo}) --> (tornar * {denso}) >.
+< (addenseo * {verbo}) --> (tornar * {espesso}) >.
+< (addenseo * {passiva}) --> (condensar) >.
+<(Rhenus * {rio}) --> rio>.
+< (Rhenus * {localizacao}) --> (Europa & (norte-ocidental)) >.
+< (Rhenus * {geografia}) --> ((entre * {Galia}) & (entre * {Germania})) >.
+< (bacillum * {objeto}) --> varinha >.
+< (bacillum * {litore}) --> vara >.
+< (arteria * {anatomia_feminino}) --> traqueia_arteria >.
+< (arteria * {anatomia_neutro_plural}) --> traqueia_arteria >.
+<(blattero * {verbo}) --> (blatero * {verbo})>.
+< (blattero * { substantivo}) --> (blatero * {substantivo}) >.
+< (animadverto * {sentido proprio}) --> (aplicar * {espirito} & (prestar * {atençao})) >.
+< (animadverto * {observar}) --> (ver & reconhecer) >.
+< (animadverto * {criticar}) --> (notar & censurar & repreender & punir) >.
+< (animadverto * {construção}) --> (com * {objeto_direto} & com * {acusativo} & com * {infinitivo} & com * {ut} & com * {acusativo_com_ad} & com * {acusativo_com_in}) >.
+< (accidens * {termo_filosofico}) --> qualidade_acidental >.
+<(accidens * {definicao}) --> acidente>.
+<(accidens * {caracteristica}) --> nao_essencial>.
+<(accidens * {relacao_com_substancia}) --> acessorio>.
+<(accidens * {forma_usual}) --> plural>.
+< (accidens * {forma_singular}) --> decadencia >.
+< (beneficentia * {sentimento}) --> beneficencia >.
+< (beneficentia * {clemencia}) --> clemencia >.
+< (bipartito * {adv}) --> (em_duas_partes) >.
+< (bipartito * {adv}) --> (pela_metade) >.
+< (amygdalum * {fruta}) --> amendoa >.
+< (amygdalum * {planta}) --> amendoeira >.
+<(anabathrum * {estrado}) --> estrado_movel>.
+<(anabathrum * {arquibancada}) --> arquibancada_movel>.
+< (anabathrum * {evento}) --> (evento & (&&, jogos, leituras_publicas)) >.
+< (beneficus * {adjetivo}) --> generoso >.
+< (beneficus * {adjetivo}) --> liberal >.
+< (beneficus * {adjetivo}) --> benefico >.
+< (aduro * {superficie}) --> queimar_ligeiramente >.
+<(aduro * {frio}) --> queimar>.
+< (aduro * {amor}) --> inflamar >.
+< (bipes * {adjetivo_proprio}) --> bipede >.
+< (bipes * {adjetivo_figurado}) --> imbecil >.
+< (bipes * {substantivo}) --> animal_de_dois_pes >.
+<(abicio * {verbo}) --> abjicio>.
+< (abjicio * {verbo}) --> abicio >.
+<(assentatorie * {modo}) --> (adulador * {comportamento})>.
+<(assentatorie) <-> (como_adulador)>.
+< (assentatorie) --> (adjetivo * {modo}) >.
+< (canesco * {sentido proprio}) --> embranquecer >.
+< (canesco * {sentido figurado}) --> envelhecer >.
+< (caltha * {flor}) --> cravo_defunto >.
+< (caltha * {flor}) --> rosa_de_ouro >.
+<(arrisor * {pessoa}) --> (homem & (sorri_quando_fala & adulador))>.
+<(arrisor * {comportamento}) --> (sorri & fala & adulador)>.
+< (arrisor * {caracteristica}) --> adulador >.
+< (arefacio * {verbo}) --> (fazer * {secar}) >.
+< (arefacio * {verbo}) --> (secar * {terreno}) >.
+< (arefacio * {verbo}) --> (esgotar * {substancia}) >.
+< (sol * {agente}) --> (arefacio * {acao}) >.
+< (arefacio * {efeito}) --> (terra * {seca}) >.
+< (raspar * {verbo}) --> tirar_raspando >.
+<(raspar * {verbo}) --> tosar>.
+<(raspar * {sujeito}) --> objeto>.
+< (raspar * {efeito}) --> raspo >.
+< (bibo * {acao}) --> beber >.
+< (bibo * {sentimento}) --> absorver >.
+<(bibo * {habitar}) --> morar>.
+<bibo ==> <absorver --> amor>>.
+<bibo ==> <morar --> beira_rio>>.
+< (busa * {dama_romana}) --> (mulher * {romana}) >.
+< (busiris * {masc}) --> (rei * {egito}) >.
+< (busiris * {fem}) --> (cidade * {egito}) >.
+< (bussenius * {nome_familia}) --> (nome * {familia}) >.
+< (bustum * {lugar}) --> (lugar * {queimada}) >.
+< (bustum * {tumulo}) --> (tumulo * {sepultura}) >.
+< (bustum * {cinzas}) --> (cinzas * {restos}) >.
+< (bustuarius * {relativo_funerais}) --> (relativo * {funerais}) >.
+< (bustuarius * {frequenta_lugares_queimada}) --> (frequnta * {lugares_queimada}) >.
+< (britones * {povo}) --> bretoes >.
+< (britones * {local}) --> britania >.
+< (britones * {outro_nome}) --> gra_bretanha >.
+<(britto * {singular}) <-> britones>.
+<britones --> povo_celtico>.
+< (bullitus * {particípio}) --> (que foi bolado) >.
+<(bullitus * {particípio}) --> (bolado)>.
+<(bullitus * {verbo}) --> (bolir)>.
+<(bolir * {verbo}) --> (fazer bolhar)>.
+< (bolir * {verbo}) --> (fazer ferver) >.
+<(adscriptio * {escrito}) --> adição>.
+<(adscriptio * {contexto_juridico}) --> adição>.
+< (adscriptio * {significado}) --> adicão >.
+< (armilla * {joia}) --> bracelete >.
+< (armillatus * {portador_de_bracelete}) --> (pessoa & (<#1 --> usa>, <(bracelete * #1) --> [objeto_de]>)) >.
+< (armillatus * {portador_de_colar}) --> (pessoa & (<#1 --> usa>, <(colar * #1) --> [objeto_de]>)) >.
+< (actum * {ato}) --> realizacao >.
+<(actum * {acao}) --> execucao>.
+< (actum * {pl}) --> (&&, #1, (#1 * {ato}) --> realizacao) >.
+< (antevolo * {ação}) --> (voar & (antes_de * {outro})) >.
+< (alternus * {sequencia}) --> (um_depois_do_outro) >.
+< (alternus * {relacao}) --> (reciproco) >.
+< (alternus * {relacao}) --> (mutuo) >.
+< (aequalis * {grandeza}) --> mesma_grandeza >.
+< (aequalis * {idade}) --> contemporaneo >.
+< (aequalis * {estado}) --> igual >.
+< (aequalis * {padrao}) --> uniforme >.
+< (aequalis * {comportamento}) --> constante >.
+<(Arctous * {adjetivo}) --> artico>.
+<(Arctous * {adjetivo}) --> setentrional>.
+<(Arctous * {regiao}) --> artico>.
+< (Arctous * {regiao}) --> setentrional >.
+< (armifer * {guerreiro}) --> belicoso >.
+< (armifer * {lugar}) --> (&&, <#1 --> lugar>, <#1 --> (&&, (--, desarmado), (--> produz), (homem * {armado}))>) >.
+< (Orgetorix * {nome}) --> (nome * {pessoa}) >.
+< (Orgetorix * {pessoa}) --> helvecio >.
+< (Orgetorix * {nome_alternativo}) --> Orgetorige >.
+< (Graecus * {adjetivo}) --> (grego * {nacionalidade}) >.
+< (Graecus * {substantivo_comum}) --> (homem * {grego}) >.
+< (Graecus * {substantivo_proprio}) --> (rei * {grego}) >.
+< (captare * {sentido proprio}) --> apanhar >.
+< (captare * {sentido figurado}) --> tomar >.
+< (captare * {cobiçar}) --> ambicionar >.
+< (captare * {fazer_corte}) --> granjear >.
+< (captare * {espiar}) --> espionar >.
+< (captare * {surpreender}) --> apanhar_em_flagrante >.
+< (captare * {fazer_caça}) --> caçar >.
+<(calator * {profissao}) --> arauto>.
+< (calator * {servico}) --> (magistrado & sacerdote & particular) >.
+< (absolutio * {sentido proprio}) --> (ação_de * {desembaraçar_se}) >.
+<(absolutio * {quitação}) --> solução>.
+<(absolutio * {acabamento}) --> perfeição>.
+< (absolutio * {retórica}) --> exatidão >.
+< (angularis * {forma}) --> (tem_cantos & tem_angulos) >.
+< (alba * {geografia}) --> (alba_Longa | alba_Fucentia) >.
+< (alba * {geografia}) --> (cidade * {Italia}) >.
+< (alba * {pessoa}) --> (rei * {alba_Longa}) >.
+< (alba * {pessoa}) --> (alba_Aemilius) >.
+< (albana * {geografia}) --> (via * {albana}) >.
+< (albana * {geografia}) --> (via * {Capua}) >.
+< (albanos * {pessoa}) --> (habitantes * {alba_Longa}) >.
+< (albanos * {pessoa}) --> (albaneses * {albania}) >.
+< (albania * {geografia}) --> (regiao * {asia}) >.
+< (albania * {geografia}) --> (regiao * {mar_Caspio}) >.
+< (albanum * {geografia}) --> (casa * {Pompeu}) >.
+< (albanum * {geografia}) --> (casa * {Clodio}) >.
+< (albanus * {adjetivo}) --> (da_alba) >.
+< (albanus * {adjetivo}) --> (da_albania) >.
+< (albanus_Lacus * {geografia}) --> (lago * {albano}) >.
+< (albanus_Lacus * {geografia}) --> (lago * {alba}) >.
+< (albatus * {adjetivo}) --> (vestido_de_branco) >.
+< (adapertilis * {propriedade}) --> (pode_ser_aberto & (deixa_ver_por_abertura)) >.
+< (accuratus * {obra}) --> (feito_com_cuidado * completo) >.
+<(accuratus * {qualidade}) --> acurado>.
+<(--, <accuratus --> pessoa>.
+< (acervatio * {fenomeno}) --> acumulacao >.
+< (capistrum * {sentido proprio}) --> mordaça >.
+< (capistrum * {sentido figurado}) --> cabresto >.
+< (capistrum * {casamento}) --> cabrestoconjugal >.
+< (ad mordeo * {ação física}) --> morder >.
+<(ad mordeo * {ação moral}) --> criticar>.
+<(ad mordeo * {sujeito}) ==> <(#1 * {efeito}) --> dano>>.
+<(ad mordeo * {efeito}) --> lesão>.
+<(ad mordeo * {alvo}) --> objeto_de>.
+<({alguém} * {ad mordeo}) --> agente>.
+< (autem * {conjuncao}) --> (adversativo & (--, forte)) >.
+< (autem * {funcao}) --> indicar_oposicao_atenuada >.
+< (autem * {posicao}) --> depois_da_primeira_palavra >.
+< (autem * {etimologia}) --> (aut + em) >.
+< (autem * { Autor_latim}) --> ({Ces} * {B_Gal} * 1 * 37 * 3) >.
+< (autem * {Autor_latim}) --> ({Cic} * {Phil} * 1 * 29) >.
+< (anhelus * {sentido proprio}) --> anelante >.
+< (anhelus * {sentido proprio}) --> ofegante >.
+< (anhelus * {resfalfa}) --> que_resfalfa >.
+< (anhelus * {ofegante}) --> que_toma_ofegante >.
+< (belua * {animal}) --> fera >.
+< (belua * {corpulencia}) --> (animal & (grande & ferocidade)) >.
+< (belua * {figurado}) --> (homem & (bruto & (imbecil | bronco))) >.
+< (beluatus * {animal}) --> (forma & animal) >.
+<(applicatus * {verbo}) --> aplicado>.
+<(applicatus * {substantivo}) --> objeto_aplicado>.
+<(applicare * {acao}) --> aplicar>.
+< (applicatus * {estado}) --> estado_de_aplicacao >.
+< (belluatus * {verbo}) --> beluatus >.
+< (Cotta * {sobrenome}) --> (sobrenome * {romano}) >.
+< (Cotta * {familia}) --> (Aurelia * {familia}) >.
+< (Cottana * { significado}) --> (Cotta * {variante}) >.
+< (bustum * {lugar}) --> fogueira >.
+< (bustum * {tumulo}) --> sepultura >.
+< (bustum * {monumento}) --> monumento_funebre >.
+< (bustum * {cinzas}) --> cinzas >.
+< (capellianus * {relacao}) --> (relativo_a * {Capela}) >.
+< (Troiano * {origem}) --> (de * {Troia}) >.
+< (cavalo * {Troiano}) --> (equus * {Trojanus}) >.
+< (astrum * {sentido proprio}) --> astro >.
+< (astrum * {sentido proprio}) --> estrela >.
+< (astrum * {constelacao}) --> constelacao >.
+< (astrum * {constelacao}) --> Canis >.
+< (astrum * {sentido figurado}) --> ceu >.
+< (armo * {sentido proprio}) --> (dar_arma) >.
+< (armo * {equipar}) --> (prover_navio) >.
+< (armo * {fortificar}) --> (proteger_praça_forte) >.
+< (armo * {sentido_figurado}) --> (munir) >.
+< (armonia) <-> (harmonia) >.
+< (amplio * {sentido proprio}) --> (tornar_mais_amplo & aumentar & alargar & acrescentar) >.
+< (amplio * {lingua_juridica}) --> adiar >.
+< (acus * {agulha}) --> objeto_de_costura >.
+< (acus * {cirurgiao}) --> instrumento_medico >.
+< (acus * {bordar}) --> ferramenta_de_bordado >.
+< (acusilas * {historiador}) --> pessoa >.
+< (apocleti * {magistrados}) --> (homem & (magistrado * {Etolia})) >.
+< (apocolocynthosis * {satira}) --> (obra_de * {satira}) >.
+< (apocolocynthosis * {titulo}) --> (metamorfose * {abobora}) >.
+< (apodoti * {povo}) --> (habitante * {Etolia}) >.
+< (apodyterium * {local}) --> (vestiario * {balneario}) >.
+< (apollinare * {lugar}) --> (lugar_consecrado * {apoio}) >.
+< (apollinaris * {adjetivo}) --> (de * {apoio}) >.
+< (apollineus * {adjetivo}) --> (de * {apoio}) >.
+< (apollo * {substantivo}) --> (deus * {filho_de_Jupiter}) >.
+< (apollodorus * {filosofo}) --> (homem & (filosofo * {grego})) >.
+< (apollonia * {cidade}) --> (cidade * {nome_proprio}) >.
+< (apolloniatae * {habitantes}) --> (habitante * {apolonia}) >.
+< (apolloniates * {nativo}) --> (nativo * {apolonia}) >.
+< (apolloniensis * {adjetivo}) --> (da * {apolonia}) >.
+< (apollonis * {cidade}) --> (cidade * {Lidia}) >.
+< (apollonius * {retor}) --> (homem & (retor * {grego})) >.
+< (apologo * {verbo}) --> (rejeitar * {algo}) >.
+< (apologus * {substantivo}) --> (fabula * {narrativa}) >.
+< (apoproegmena * {substantivo}) --> (coisa * {rejeitada}) >.
+< (aposiopesis * {figura}) --> (reticencia * {retorica}) >.
+< (apostrophe * {figura}) --> (figura * {retorica}) >.
+< (apotheca * {local}) --> (lugar * {comestiveis}) >.
+< (absinthium * {planta}) --> absinto >.
+< (absonus * {som}) --> dissonante >.
+< (absonus * {sentido_figurado}) --> discordante >.
+< (armillatus * {pessoa}) --> (pessoa & ({bracelete} * {objeto_de_uso})) >.
+< (armillatus * {pessoa}) --> (pessoa & ({colar} * {objeto_de_uso})) >.
+< (bifer * {arvore}) --> (arvore & (&&, (prodz_anual --> 2), (freq_prod --> por_ano))) >.
+< (balista * {maquina}) --> maquina_de_arremessar_pestas_ou_dardos >.
+< (balista * {dardo}) --> dardo_lancado_pela_balista >.
+< (balista * {monte}) --> monte_da_Liguria >.
+< (allino * {sentido proprio}) --> (ungir & esfregar) >.
+< (allino * {sentido figurado}) --> (cobrir & manchar) >.
+< (allino * {sentido proprio}) ==> < superficie --> untada > >.
+< (allino * {sentido figurado}) ==> < objeto --> marcado > >.
+< (allino * {acao}) --> (aplicar & revestir) >.
+< (allino * {efeito}) --> (revestimento & mancha) >.
+< (breviter * {sentido_tempo}) --> pouco_tempo >.
+< (breviter * {sentido_espaco}) --> curto_espaco >.
+< (breviter * {linguagem_retora}) --> concisamente >.
+< (breviter * {linguagem_gramatical}) --> quantidade_breve >.
+< (Cous * {origem}) --> (ilha * {Cos}) >.
+< (Cous * {artista}) --> (artifex * {Apeles}) >.
+< (Apeles * {profissao}) --> pintor >.
+< (Apeles * {nacionalidade}) --> grego >.
+< (Cous * {referencia}) <-> (Apeles * {artista}) >.
+< (capripes * {caracteristica}) --> (&&, < {pata} --> (pata_de_cabra) >, < {pessoa} --> (com_pata_de_cabra) >) >.
+< (capripede * {caracteristica}) --> (&&, < {pata} --> (pata_de_cabra) >, < {pessoa} --> (com_pata_de_cabra) >) >.
+< (adhortatus * {particípio_passado}) --> (adhortor * {passado}) >.
+< (adhortatus * {forma_verbal}) --> (adhortor * {particípio}) >.
+< (adhortatus * {conjugação}) --> (verbo * {latim}) >.
+< (adhortor * {significado}) --> (aconselhar * {verbo}) >.
+< (adhortatus * {função_gramatical}) --> (particípio_passado * {latim}) >.
+< (Athenae * {cidade}) --> (cidades * {grécia}) >.
+< (Athenae * {cidade}) --> (cidades * {capital}) >.
+< (Athenae * {origem}) --> (Atena * {deusa}) >.
+< (Athenaei * {habitantes}) --> (pessoas * {atenienses}) >.
+< (Athenaeum * {lugar}) --> (burgos * {atamania}) >.
+< (Athenaeum * {edifício}) --> (.templos * {atena}) >.
+< (Athenaeus * {origem}) --> (pessoas * {atenienses}) >.
+< (Athenaeus * {nome}) --> (nomes * {homem}) >.
+< (Athenagoras * {nome}) --> (nomes * {homem}) >.
+< (Athenais * {nome}) --> (nomes * {mulher}) >.
+< (aversatio * {sentimento}) --> aversao >.
+< (aversatio * {estado}) --> afastamento >.
+< (balbe * {sentido proprio}) --> (balbuciando & gaguejando) >.
+< (balbe * {sentido figurado}) --> confusamente >.
+< (amatus * {particípio_passado}) --> (amo * {passado}) >.
+< (amatus * {particípio_passado}) --> amado >.
+< (auresco * {definicao}) --> tomar_cor_do_ouro >.
+< (auresco * {verbo}) --> incoat >.
+< (auresco * {verbo}) --> intr >.
+< (auresco * {significado}) --> dourar >.
+< (auresco * {fonte}) --> Varr_L_Lat_7_83 >.
+< (assuo * {verbo}) --> coser >.
+< (assuo * {conjugacao}) --> {adsuo, -is, -ere, -sui, -sutum} >.
+< (assimulatio * {conceito}) --> semelhança >.
+< (assimulatio * {ação}) --> comparação >.
+< (angellus * {lugar}) --> canto >.
+< (angellus * {lugar}) --> angulo >.
+< (bracteola * {significado}) --> pequena_folha_de_ouro >.
+< (Gallia * {regiao}) --> ( Europa & (Europa * {Ocidental})) >.
+< (Gallia * {regiao}) --> (Galia & (--, (Galia * {Cisalpina}))) >.
+< (Gallia * {Transalpina}) <-> (Gallia * {Ulterior}) >.
+< (Galliambus * {canto}) --> (canto & (canto * {sacerdotes_de_Cibele})) >.
+< (Galliambus * {canto}) --> (canto & (canto * {sacerdotes})) >.
+< (Gallia * {Cisalpina}) <-> (Gallia * {Citerior}) >.
+< (acervo * {verbo}) --> (acumular | amontoar | acervar) >.
+< (acervo * {senso proprio}) --> acumular >.
+< (acervo * {senso figurado}) --> (acumular | amontoar | acervar) >.
+< (cadaver * {sentido proprio}) --> corpo_morto >.
+< (cadaver * {sentido figurado}) --> corpo_morto >.
+< (cair * {sentido propio}) --> cair >.
+< (cair * {sentido figurado}) --> (&&, abatido, sucumbir, desfalecer, desaparecer) >.
+< (cair * {morte}) --> morrer >.
+< (cair * {astro}) --> declinar >.
+< (cair * {acontecimento}) --> acontecer >.
+< (cair * {fim}) --> terminar >.
+< (cair * {aplicacao}) --> aplicar_se >.
+< (cair * {lingua}) --> terminar >.
+< (cair * {gramatica}) --> acabar >.
+< (aedificatus * {particípio}) --> construído >.
+< (aedificatus * {construção}) --> edificado >.
+< (aedifico * {verbo}) --> construir >.
+< (boia * {correia}) --> (couro_de_boi * {correia}) >.
+< (boia * {argola}) --> (< couro * {argola} >) >.
+< (boia * {colar}) --> (< couro * {colar} >) >.
+< (boia * {laco}) --> (< couro * {laco} >) >.
+< (carbasus * {tecido}) --> linho_fino >.
+< (carbasus * {vestido}) --> vestido_de_linho >.
+< (carbasus * {navegação}) --> vela_de_navio >.
+< (carbasus * {teatro}) --> cortina >.
+< (carbasalina * {adjetivo}) --> linho_fino >.
+< (ancon * {cidade}) --> cidade_do_golfo_de_Venecia >.
+< (ancon * {porto}) --> porto_de_mar >.
+< (ancon * {geografia}) --> localizado_no_golfo_de_Venecia >.
+< (anconitanus * {adj}) --> originario_de_ancona >.
+< (anconitanus * {pessoa}) --> de_ancona >.
+< (ancona * {toponimo}) --> cidade >.
+< (ancona * {geografia}) --> localizada_no_golfo_de_Venecia >.
+< (ancona * {cidade}) --> cidade_porto >.

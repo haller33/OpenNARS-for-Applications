@@ -1,0 +1,100 @@
+
+The Chair Paradox
+
+    <chair --> [sit_on]> 
+
+<(&&, rock, <{SELF} --> [use_as_chair]>) ==> chair> 
+
+Defining Knowledge (JTB)
+
+    <know_P <-> (&&, believe_P, true_P, justification_P)> 
+
+<(justification_clause * people) --> (--, [agree])> 
+
+The Sorites Paradox (Heap)
+
+    dt=0.000000 <(&/, <#1 --> heap>, <#1 --> [remove_grain]>) =/> <#1 --> heap>> 
+
+dt=0.000000 <(&/, <#1 --> heap>, <#1 --> [repeat_grain_removal]>) =/> (--, <#1 --> heap>)> 
+
+The Bachelor and the Pope
+
+    <bachelor <-> (unmarried & man)> 
+
+<{pope} --> (unmarried & man)> 
+
+<{pope} --> bachelor>. %0.00;0.90% 
+
+Water Identity (Earth vs. Twin Earth)
+
+    <(water * {earth}) --> [is_h2o]> 
+
+<(water * {twin_earth}) --> [is_xyz]> 
+
+Family Resemblance (Games)
+
+    <chess --> game> 
+
+<ring_around_the_rosy --> game> 
+
+<kicking_stone --> game> 
+
+Defining "Red" (Contextual Perception)
+
+    <tomato --> [red]> 
+
+<(&&, tomato, blue_light) =/> (--, <tomato --> [red]>)> 
+
+Square Circle (Contradiction)
+
+    <square_circle --> (square & circle)>. %0.00;0.99% 
+
+<(&&, square_circle, poem_context) ==> [exists]> 
+
+The Relativity of "Tall"
+
+    <(&&, <#1 --> 5yo>, <#1 --> [1.2m]>) ==> <#1 --> [tall]>> 
+
+<(&&, <#1 --> 30yo>, <#1 --> [1.2m]>) ==> <#1 --> [short]>> 
+
+Biological Definition of Life
+
+    <life <-> ([grow] & [reproduce] & [metabolize])> 
+
+<{mule} --> life>. %1.00;0.90% 
+
+<{mule} --> [reproduce]>. %0.00;0.90% 
+
+<fire --> life>. %0.00;0.90% 
+
+Bird Taxonomy Exceptions
+
+    <bird --> ([feathered] & [fly])> 
+
+<penguin --> (bird & (--, [fly]))> 
+
+<bat --> ([fly] & (--, bird))> 
+
+The Subjectivity of Justice
+
+    <justice <-> [give_due]> 
+
+<(justice * theory) --> [dependent]> 
+
+Understanding vs. Mimicry
+
+    <understand <-> [correct_usage]> 
+
+<parrot --> [correct_usage]> 
+
+<parrot --> [understand]>. %0.00;0.90% 
+
+The Philosophical Zombie
+
+    <zombie --> (human_physical & (--, [conscious]))> 
+
+Convincing Proofs
+
+    <proof <-> (&&, argument, [convincing])> 
+
+<([convincing] * audience) --> [relative]>

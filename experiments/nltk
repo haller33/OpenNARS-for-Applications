@@ -1,0 +1,30 @@
+2026-04-05T22:41:15,232 Using pip 24.3.1 from /home/synbian/git/clone/NARS/OpenNARS-for-Applications/.venv/lib/python3.12/site-packages/pip (python 3.12)
+2026-04-05T22:41:15,233 Non-user install because user site-packages disabled
+2026-04-05T22:41:15,304 Created temporary directory: /tmp/nix-shell-1046028-0/nix-shell-1056188-0/pip-build-tracker-2kaqvc51
+2026-04-05T22:41:15,304 Initialized build tracking at /tmp/nix-shell-1046028-0/nix-shell-1056188-0/pip-build-tracker-2kaqvc51
+2026-04-05T22:41:15,304 Created build tracker: /tmp/nix-shell-1046028-0/nix-shell-1056188-0/pip-build-tracker-2kaqvc51
+2026-04-05T22:41:15,304 Entered build tracker: /tmp/nix-shell-1046028-0/nix-shell-1056188-0/pip-build-tracker-2kaqvc51
+2026-04-05T22:41:15,304 Created temporary directory: /tmp/nix-shell-1046028-0/nix-shell-1056188-0/pip-install-yg_yy0xx
+2026-04-05T22:41:15,328 Remote version of pip: 26.0.1
+2026-04-05T22:41:15,328 Local version of pip:  24.3.1
+2026-04-05T22:41:15,331 Was pip installed by pip? True
+2026-04-05T22:41:15,331 WARNING: UpgradePrompt(old='24.3.1', new='26.0.1')
+2026-04-05T22:41:15,334 ERROR: You must give at least one requirement to install (see "pip help install")
+2026-04-05T22:41:15,334 Exception information:
+2026-04-05T22:41:15,334 Traceback (most recent call last):
+2026-04-05T22:41:15,334   File "/home/synbian/git/clone/NARS/OpenNARS-for-Applications/.venv/lib/python3.12/site-packages/pip/_internal/cli/base_command.py", line 105, in _run_wrapper
+2026-04-05T22:41:15,334     status = _inner_run()
+2026-04-05T22:41:15,334              ^^^^^^^^^^^^
+2026-04-05T22:41:15,334   File "/home/synbian/git/clone/NARS/OpenNARS-for-Applications/.venv/lib/python3.12/site-packages/pip/_internal/cli/base_command.py", line 96, in _inner_run
+2026-04-05T22:41:15,334     return self.run(options, args)
+2026-04-05T22:41:15,334            ^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-05T22:41:15,334   File "/home/synbian/git/clone/NARS/OpenNARS-for-Applications/.venv/lib/python3.12/site-packages/pip/_internal/cli/req_command.py", line 67, in wrapper
+2026-04-05T22:41:15,334     return func(self, options, args)
+2026-04-05T22:41:15,334            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-05T22:41:15,334   File "/home/synbian/git/clone/NARS/OpenNARS-for-Applications/.venv/lib/python3.12/site-packages/pip/_internal/commands/install.py", line 343, in run
+2026-04-05T22:41:15,334     reqs = self.get_requirements(args, options, finder, session)
+2026-04-05T22:41:15,334            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-05T22:41:15,334   File "/home/synbian/git/clone/NARS/OpenNARS-for-Applications/.venv/lib/python3.12/site-packages/pip/_internal/cli/req_command.py", line 285, in get_requirements
+2026-04-05T22:41:15,334     raise CommandError(
+2026-04-05T22:41:15,334 pip._internal.exceptions.CommandError: You must give at least one requirement to install (see "pip help install")
+2026-04-05T22:41:15,336 Removed build tracker: '/tmp/nix-shell-1046028-0/nix-shell-1056188-0/pip-build-tracker-2kaqvc51'

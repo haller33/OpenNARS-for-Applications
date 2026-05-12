@@ -1,0 +1,78 @@
+Comment: The system wants to sell food, this is how it usually does it:
+Input: dt=0.000000 <(<({I} * nars) --> greet> &/ <({SELF} * what_do_you_want_to_buy) --> ^say>) =/> <({I} * pizza) --> want>>. Priority=1.000000 Stamp=[1] Truth: frequency=1.000000, confidence=0.900000
+Input: dt=0.000000 <(<({I} * drink) --> want> &/ <({SELF} * I_have_pizza_only) --> ^say>) =/> <({I} * pizza) --> want>>. Priority=1.000000 Stamp=[2] Truth: frequency=1.000000, confidence=0.900000
+Input: dt=0.000000 <(<({I} * pizza) --> want> &/ <({SELF} * which_pizza_do_you_want) --> ^say>) =/> <{SELF} --> [useful]>>. Priority=1.000000 Stamp=[3] Truth: frequency=1.000000, confidence=0.900000
+Input: dt=0.000000 <(<#1 --> choice> &/ <({SELF} * (ok_have * #1)) --> ^say>) =/> <{SELF} --> [useful]>>. Priority=1.000000 Stamp=[4] Truth: frequency=1.000000, confidence=0.900000
+Comment: Some background knowledge of the available types of pizza
+Input: <salamipizza --> ([fleshy] & pizza)>. Priority=1.000000 Stamp=[5] Truth: frequency=1.000000, confidence=0.900000
+Input: <funghipizza --> ([vegetarian] & pizza)>. Priority=1.000000 Stamp=[6] Truth: frequency=1.000000, confidence=0.900000
+Comment: Setup interaction with user:
+performing 50 inference steps:
+done with 50 additional inference steps.
+Comment: Interaction scenario:
+Comment: Input sentence: I am greeting nars
+Input: <({I} * nars) --> greet>. Priority=1.000000 Stamp=[7] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Input: <{SELF} --> [useful]>! :|: occurrenceTime=78 Priority=1.000000 Stamp=[8] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Comment: expected: ^say executed with args ({SELF} * what_do_you_want_to_buy)
+Comment: Input sentence: I want a drink
+Input: <({I} * drink) --> want>. Priority=1.000000 Stamp=[9] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Input: <{SELF} --> [useful]>! :|: occurrenceTime=102 Priority=1.000000 Stamp=[10] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Comment: expected: ^say executed with args ({SELF} * I_have_pizza_only)
+Comment: Input sentence: I want a pizza
+Input: <({I} * pizza) --> want>. Priority=1.000000 Stamp=[11] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Input: <{SELF} --> [useful]>! :|: occurrenceTime=126 Priority=1.000000 Stamp=[12] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Comment: expected: ^say executed with args ({SELF} * which_pizza_do_you_want)
+Comment: Input sentence: any vegetarian pizza is the choice
+Input: <([vegetarian] & pizza) --> choice>. Priority=1.000000 Stamp=[13] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Input: <{SELF} --> [useful]>! :|: occurrenceTime=150 Priority=1.000000 Stamp=[14] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Comment: expected: ^say executed with args ({SELF} * (ok_have * funghipizza))
+Comment: Input sentence: I want another pizza
+Input: <({I} * pizza) --> want>. Priority=1.000000 Stamp=[15] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Input: <{SELF} --> [useful]>! :|: occurrenceTime=174 Priority=1.000000 Stamp=[16] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Comment: expected: ^say executed with args ({SELF} * which_pizza_do_you_want)
+Comment: Input sentence: the salamipizza is the choice
+Input: <salamipizza --> choice>. Priority=1.000000 Stamp=[17] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Input: <{SELF} --> [useful]>! :|: occurrenceTime=198 Priority=1.000000 Stamp=[18] Truth: frequency=1.000000, confidence=0.900000
+performing 10 inference steps:
+done with 10 additional inference steps.
+Comment: expected: ^say executed with args ({SELF} * (ok_have * salamipizza))
+Statistics
+----------
+countConceptsMatchedTotal:	17519
+countConceptsMatchedMax:	459
+countConceptsMatchedAverage:	83
+currentTime:			209
+total concepts:			512
+DeclarativeImplicationTableMaxItems:	4
+TemporalImplicationTableMaxItems:	2
+current average concept priority:	0.000027
+current average concept usefulness:	0.024771
+current belief events cnt:		32
+current goal events cnt:		400
+Count atomic terms used:		89
+current average belief event priority:	0.000000
+current average goal event priority:	0.017838
+Maximum chain length in concept hashtable: 3
+Maximum chain length in atoms hashtable: 2

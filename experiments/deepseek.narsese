@@ -1,0 +1,204 @@
+// A chair is defined by its function: something you sit on.
+<chair --> [sit_on]>.
+
+// A rock becomes a chair if you use it as one (conditional definition).
+<(&&, rock, <rock --> [used_as_chair]>) ==> <rock --> chair>>.
+
+// Knowledge as justified true belief (JTB) – conjunction of three components.
+<know_P <-> (&&, believe_P, true_P, justification_P)>.
+
+// The justification clause is something people do NOT agree on.
+<(justification_clause * people) --> (--, [agree])>.
+
+// Sorites paradox: removing one grain from a heap still leaves a heap (temporal implication).
+<(&/, <#1 --> heap>, <#1 --> [remove_grain]>) =/> <#1 --> heap>>.
+
+// Auxiliary predicate: grain removal is an action.
+<[remove_grain] --> [action]>.
+
+// Removing two grains eventually makes it not a heap.
+<(&/, <#1 --> heap>, <#1 --> [remove_grain]>, <#1 --> [remove_grain]>) =/> (--, <#1 --> heap>)>.
+
+// Default direction: bachelor implies unmarried and man (not biconditional here).
+<bachelor --> (unmarried & man)>.
+
+// Contextual biconditional: in normal contexts, bachelor is exactly unmarried man.
+(bachelor * {normal}) <-> (unmarried & man).
+
+// Previous biconditional version (commented out for reference).
+// <bachelor <-> (unmarried & man)>.
+
+// The Pope satisfies the defining properties: unmarried and a man.
+<{pope} --> (unmarried & man)>.
+
+// Explicit exception: the Pope is NOT a bachelor (high confidence negative).
+<{pope} --> bachelor>. %0.00;0.90%.
+
+// On Earth, water has the chemical property H₂O.
+<(water * {earth}) --> [is_h2o]>.
+
+// On Twin Earth, the similar liquid has property XYZ.
+<(water * {twin_earth}) --> [is_xyz]>.
+
+// If something is XYZ on Twin Earth, then it is water (uncertain inference, half truth).
+<((water * {twin_earth}) --> [is_xyz]) ==> <(water * {twin_earth}) --> water>>. %0.50;0.90%.
+
+// Game exemplars (family resemblance – no necessary/sufficient conditions).
+<chess --> game>.
+<ring_around_the_rosy --> game>.
+<kicking_stone --> game>.
+
+// A tomato is red by default.
+<tomato --> [red]>.
+
+// Under blue light, a tomato is not red.
+<(&&, tomato, blue_light) ==> (--, <tomato --> [red]>)>.
+
+// A square circle is a contradiction (almost impossible in logic).
+<square_circle --> (square & circle)>. %0.00;0.99%.
+
+// In a poem (metaphorical context), a square circle may exist.
+<(&&, square_circle, poem_context) ==> [exists]>.
+
+// A 5‑year‑old of height 1.2 m is considered tall.
+<(&&, <#1 --> 5yo>, <#1 --> [1.2m]>) ==> <#1 --> [tall]>>.
+
+// A 30‑year‑old of the same height is short.
+<(&&, <#1 --> 30yo>, <#1 --> [1.2m]>) ==> <#1 --> [short]>>.
+
+// Life defined as conjunction of grow, reproduce, metabolize.
+<life <-> ([grow] & [reproduce] & [metabolize])>.
+
+// Mules are alive (high truth) but do not reproduce (exception).
+<{mule} --> life>. %1.00;0.90%.
+<{mule} --> [reproduce]>. %0.00;0.90%.
+
+// Fire grows but is not alive (explicit counterexample).
+<fire --> life>. %0.00;0.90%.
+
+// Birds typically have feathers and fly.
+<bird --> ([feathered] & [fly])>.
+
+// Penguins are birds but do not fly (exception).
+<penguin --> (bird & (--, [fly]))>.
+
+// Bats fly but are not birds (exception).
+<bat --> ([fly] & (--, bird))>.
+
+// Justice means giving each person their due.
+<justice <-> [give_due]>.
+
+// What is "due" depends on the theory (desert, need, equality).
+<(justice * theory) --> [dependent]>.
+
+// Understanding a word means using it correctly in sentences.
+<understand <-> [correct_usage]>.
+
+// A parrot can use words correctly (mimicry).
+<parrot --> [correct_usage]>.
+
+// But a parrot does not truly understand (explicit exception).
+<parrot --> [understand]>. %0.00;0.90%.
+
+// Philosophical zombie: physically human but no conscious experience.
+<zombie_philosophical --> (human_physical & (--, [conscious]))>.
+
+// Hollywood zombie: a human corpse that is hungry.
+<zombie_hollywood --> (human_corpse & [hungry])>.
+
+// The two zombie concepts are different.
+<zombie_hollywood =/= zombie_philosophical>.
+
+// A proof is a convincing argument.
+<proof <-> (&&, argument, [convincing])>.
+
+// What counts as convincing changes with the audience.
+<([convincing] * audience) --> [relative]>.
+
+// === Revision Test Suite ===
+// These statements contradict existing beliefs to force non‑monotonic revision.
+
+// 1. Contradict penguin flight: penguins *can* fly (low confidence, but will revise the existing negation)
+<penguin --> [fly]>. %0.30;0.60%.
+
+// 2. Contradict bat classification: bats *are* birds (very low confidence, but will revise the existing negation)
+<bat --> bird>. %0.10;0.50%.
+
+// 3. Contradict fire being non‑life: fire *is* alive (moderate confidence, conflicting with explicit false)
+<fire --> life>. %0.40;0.70%.
+
+// 4. Contradict mule reproduction: mules *can* reproduce (low confidence, but will revise the explicit false)
+<{mule} --> [reproduce]>. %0.20;0.55%.
+
+// 5. Contradict tomato under blue light: a tomato under blue light *is still red* (low confidence)
+<(&&, tomato, blue_light) ==> <tomato --> [red]>>. %0.15;0.50%.
+
+// 6. Contradict square circle impossibility: in Euclidean geometry, a square circle *can* exist (very low confidence)
+<(&&, square_circle, euclidean_geometry) ==> [exists]>. %0.05;0.40%.
+
+// 7. Contradict parrot understanding: a parrot *does* understand (moderate confidence, conflicting with explicit false)
+<parrot --> [understand]>. %0.45;0.65%.
+
+// 8. Contradict the Pope exception: the Pope *is* a bachelor (already revised to true, but this adds new evidence)
+<{pope} --> bachelor>. %0.80;0.85%.
+
+// 9. Contradict the definition of life: add that metabolize is not necessary (weak evidence)
+// <life <-> ([grow] & [reproduce])>. %0.70;0.60%.   // conflicts with original triple conjunction
+<life <-> ([grow] & [reproduce])>. %0.70;0.60%.
+
+// 10. Contradict the equivalence of philosophical and Hollywood zombie (they are actually the same, low confidence)
+<zombie_hollywood <-> zombie_philosophical>. %0.25;0.50%.
+
+// === Final question to see revised result ===
+// Ask about the Pope after all revisions.
+<{pope} --> bachelor>?
+
+// ---------- Additional test queries ----------
+
+// 1. Temporal heap: after removing two grains, is it still a heap?
+<(&/, <#1 --> heap>, <#1 --> [remove_grain]>, <#1 --> [remove_grain]>) =/> <#1 --> heap>>?
+
+// 2. Analogical game: is a new activity "throwing a ball" a game? (no explicit definition, only exemplars)
+// Expectation: probably yes, via similarity to kicking_stone
+<throw_ball --> game>?
+
+// 3. Red under blue light: if a cherry is red, and we put it under blue light, is it still red?
+// Expectation: derived from tomato analogy
+<(&&, cherry, blue_light) ==> (--, <cherry --> [red]>)>?
+
+// 4. Tallness: a 5-year-old who is 1.2 m is tall. Is a 6-year-old of same height tall?
+// Expectation: probably weaker truth
+<(&&, <#1 --> 6yo>, <#1 --> [1.2m]>) ==> <#1 --> [tall]>>?
+
+// 5. Life definition: fire grows and "reproduces" (spreads) – is it alive?
+// Expectation: false (low frequency) from explicit counterexample
+<fire --> life>?
+
+// 6. Bird analogy: an ostrich is a bird, does it fly?
+<ostrich --> bird>.
+// Expectation: uncertain (penguin suggests not all birds fly)
+<ostrich --> [fly]>?
+
+// 7. Justice under different theories: is justice dependent on theory?
+// Expectation: true (but dependent on theory)
+<(justice * {desert}) --> [give_due]>?
+
+// 8. Understanding vs mimicry: if a parrot uses words correctly, does it understand?
+// Expectation: false (explicit exception)
+<<parrot --> [correct_usage]> ==> <parrot --> [understand]>>?
+
+// 9. Square circle in Euclidean geometry: does it exist?
+// Expectation: false (contradiction)
+<(&&, square_circle, euclidean_geometry) ==> [exists]>?
+
+// 10. Convincing proof for a mathematician vs a child: is the same argument convincing?
+// Expectation: false (relative)
+<([convincing] * mathematician) <-> ([convincing] * child)>?
+
+// 11. Meta‑question: is the definition of "bachelor" equivalent to unmarried man?
+// Expectation: true (from input)
+<bachelor <-> (unmarried & man)>?
+
+// 12. Exception propagation: the Pope is unmarried and a man, so is he a bachelor? (conflict already resolved)
+// Already asked, but good to see revision result
+<{pope} --> bachelor>?

@@ -1,0 +1,228 @@
+Input: <chair --> [sit_on]>. Priority=1.000000 Stamp=[1] Truth: frequency=1.000000, confidence=0.900000
+Selected: <chair --> [sit_on]>. Priority=1.000000 Stamp=[1] Truth: frequency=1.000000, confidence=0.900000
+Input: <(rock && <rock --> [used_as_chair]>) ==> <rock --> chair>>. Priority=1.000000 Stamp=[2] Truth: frequency=1.000000, confidence=0.900000
+Input: <(rock && <rock --> [used_as_chair]>) ==> <rock --> chair>>. Priority=1.000000 Stamp=[2] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(rock && <rock --> [used_as_chair]>) ==> <rock --> chair>>. Priority=1.000000 Stamp=[2] Truth: frequency=1.000000, confidence=0.900000
+Input: <know_P <-> (believe_P && true_P)>. Priority=1.000000 Stamp=[3] Truth: frequency=1.000000, confidence=0.900000
+Selected: <know_P <-> (believe_P && true_P)>. Priority=1.000000 Stamp=[3] Truth: frequency=1.000000, confidence=0.900000
+Derived: <(believe_P && true_P) <-> know_P>. Priority=0.350102 Stamp=[3] Truth: frequency=1.000000, confidence=0.810000
+Input: <(justification_clause * people) --> (! [agree])>. Priority=1.000000 Stamp=[4] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(justification_clause * people) --> (! [agree])>. Priority=1.000000 Stamp=[4] Truth: frequency=1.000000, confidence=0.900000
+Derived: <justification_clause --> ((! [agree]) /1 people)>. Priority=0.272432 Stamp=[4] Truth: frequency=1.000000, confidence=0.810000
+Derived: <people --> ((! [agree]) /2 justification_clause)>. Priority=0.272432 Stamp=[4] Truth: frequency=1.000000, confidence=0.810000
+Input: dt=0.000000 <(<#1 --> heap> &/ <#1 --> [remove_grain]>) =/> <#1 --> heap>>. Priority=1.000000 Stamp=[5] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(believe_P && true_P) <-> know_P>. Priority=0.350032 Stamp=[3] Truth: frequency=1.000000, confidence=0.810000
+Input: <[remove_grain] --> [action]>. Priority=1.000000 Stamp=[6] Truth: frequency=1.000000, confidence=0.900000
+Selected: <[remove_grain] --> [action]>. Priority=1.000000 Stamp=[6] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[remove_grain] <-> [action]>. Priority=0.301667 Stamp=[6] Truth: frequency=1.000000, confidence=0.810000
+Input: dt=0.000000 <(<#1 --> heap> &/ <#1 --> [remove_grain]>) =/> (! <#1 --> heap>)>. Priority=1.000000 Stamp=[7] Truth: frequency=1.000000, confidence=0.900000
+Selected: <[remove_grain] <-> [action]>. Priority=0.301636 Stamp=[6] Truth: frequency=1.000000, confidence=0.810000
+Derived: <[action] <-> [remove_grain]>. Priority=0.086922 Stamp=[6] Truth: frequency=1.000000, confidence=0.729000
+Derived: <remove_grain <-> action>. Priority=0.130382 Stamp=[6] Truth: frequency=1.000000, confidence=0.729000
+Input: <bachelor <-> (unmarried & man)>. Priority=1.000000 Stamp=[8] Truth: frequency=1.000000, confidence=0.900000
+Selected: <bachelor <-> (unmarried & man)>. Priority=1.000000 Stamp=[8] Truth: frequency=1.000000, confidence=0.900000
+Derived: <(unmarried & man) <-> bachelor>. Priority=0.350102 Stamp=[8] Truth: frequency=1.000000, confidence=0.810000
+Input: <{pope} --> (unmarried & man)>. Priority=1.000000 Stamp=[9] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{pope} --> (unmarried & man)>. Priority=1.000000 Stamp=[9] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{pope} --> unmarried>. Priority=0.350102 Stamp=[9] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{pope} --> man>. Priority=0.350102 Stamp=[9] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{pope} --> bachelor>. Priority=0.315092 Stamp=[9,8] Truth: frequency=1.000000, confidence=0.810000
+Input: <{pope} --> bachelor>. Priority=1.000000 Stamp=[10] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{pope} --> bachelor>. Priority=1.000000 Stamp=[9,10,8] Truth: frequency=1.000000, confidence=0.929889
+Selected: <{pope} --> bachelor>. Priority=1.000000 Stamp=[10] Truth: frequency=1.000000, confidence=0.900000
+Revised: <{pope} --> (unmarried & man)>. Priority=0.081719 Stamp=[9,10,8] Truth: frequency=1.000000, confidence=0.921198
+Derived: <unmarried --> bachelor>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <bachelor --> unmarried>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <unmarried <-> bachelor>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <bachelor <-> unmarried>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{$1} --> unmarried> ==> <{$1} --> bachelor>>. Priority=0.062475 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{$1} --> bachelor> ==> <{$1} --> unmarried>>. Priority=0.062475 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <man --> bachelor>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <bachelor --> man>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <man <-> bachelor>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <bachelor <-> man>. Priority=0.111986 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{$1} --> man> ==> <{$1} --> bachelor>>. Priority=0.062475 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<{$1} --> bachelor> ==> <{$1} --> man>>. Priority=0.062475 Stamp=[10,9] Truth: frequency=1.000000, confidence=0.421631
+Input: <(water * {earth}) --> [is_h2o]>. Priority=1.000000 Stamp=[11] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(water * {earth}) --> [is_h2o]>. Priority=1.000000 Stamp=[11] Truth: frequency=1.000000, confidence=0.900000
+Derived: <water --> ([is_h2o] /1 {earth})>. Priority=0.272432 Stamp=[11] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{earth} --> ([is_h2o] /2 water)>. Priority=0.272432 Stamp=[11] Truth: frequency=1.000000, confidence=0.810000
+Input: <(water * {twin_earth}) --> [is_xyz]>. Priority=1.000000 Stamp=[12] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(water * {twin_earth}) --> [is_xyz]>. Priority=1.000000 Stamp=[12] Truth: frequency=1.000000, confidence=0.900000
+Derived: <water --> ([is_xyz] /1 {twin_earth})>. Priority=0.272432 Stamp=[12] Truth: frequency=1.000000, confidence=0.810000
+Derived: <{twin_earth} --> ([is_xyz] /2 water)>. Priority=0.272432 Stamp=[12] Truth: frequency=1.000000, confidence=0.810000
+Derived: <(([is_h2o] /1 {earth}) * {twin_earth}) --> [is_xyz]>. Priority=0.043571 Stamp=[12,11] Truth: frequency=1.000000, confidence=0.421631
+Input: <<(water * {twin_earth}) --> [is_xyz]> ==> <(water * {twin_earth}) --> water>>. Priority=1.000000 Stamp=[13] Truth: frequency=1.000000, confidence=0.900000
+Input: <<(water * {twin_earth}) --> [is_xyz]> ==> <(water * {twin_earth}) --> water>>. Priority=1.000000 Stamp=[13] Truth: frequency=1.000000, confidence=0.900000
+Selected: <<(water * {twin_earth}) --> [is_xyz]> ==> <(water * {twin_earth}) --> water>>. Priority=1.000000 Stamp=[13] Truth: frequency=1.000000, confidence=0.900000
+Derived: <(water * {twin_earth}) --> water>. Priority=1.000000 Stamp=[12,13] Truth: frequency=1.000000, confidence=0.810000
+Input: <chess --> game>. Priority=1.000000 Stamp=[14] Truth: frequency=1.000000, confidence=0.900000
+Selected: <chess --> game>. Priority=1.000000 Stamp=[14] Truth: frequency=1.000000, confidence=0.900000
+Input: <ring_around_the_rosy --> game>. Priority=1.000000 Stamp=[15] Truth: frequency=1.000000, confidence=0.900000
+Selected: <ring_around_the_rosy --> game>. Priority=1.000000 Stamp=[15] Truth: frequency=1.000000, confidence=0.900000
+Derived: <chess --> ring_around_the_rosy>. Priority=0.325691 Stamp=[15,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <ring_around_the_rosy --> chess>. Priority=0.325691 Stamp=[15,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <chess <-> ring_around_the_rosy>. Priority=0.325691 Stamp=[15,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <ring_around_the_rosy <-> chess>. Priority=0.325691 Stamp=[15,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<chess --> $1> ==> <ring_around_the_rosy --> $1>>. Priority=0.217127 Stamp=[15,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<ring_around_the_rosy --> $1> ==> <chess --> $1>>. Priority=0.217127 Stamp=[15,14] Truth: frequency=1.000000, confidence=0.447514
+Input: <kicking_stone --> game>. Priority=1.000000 Stamp=[16] Truth: frequency=1.000000, confidence=0.900000
+Selected: <kicking_stone --> game>. Priority=1.000000 Stamp=[16] Truth: frequency=1.000000, confidence=0.900000
+Derived: <ring_around_the_rosy --> ring_around_the_rosy>. Priority=1.000000 Stamp=[15,15,14,14] Truth: frequency=1.000000, confidence=0.200269
+Derived: <chess --> chess>. Priority=1.000000 Stamp=[15,15,14,14] Truth: frequency=1.000000, confidence=0.200269
+Derived: <chess --> kicking_stone>. Priority=0.293122 Stamp=[16,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <kicking_stone --> chess>. Priority=0.293122 Stamp=[16,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <chess <-> kicking_stone>. Priority=0.293122 Stamp=[16,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <kicking_stone <-> chess>. Priority=0.293122 Stamp=[16,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<chess --> $1> ==> <kicking_stone --> $1>>. Priority=0.195414 Stamp=[16,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<kicking_stone --> $1> ==> <chess --> $1>>. Priority=0.195414 Stamp=[16,14] Truth: frequency=1.000000, confidence=0.447514
+Derived: <ring_around_the_rosy --> kicking_stone>. Priority=0.325691 Stamp=[16,15] Truth: frequency=1.000000, confidence=0.447514
+Derived: <kicking_stone --> ring_around_the_rosy>. Priority=0.325691 Stamp=[16,15] Truth: frequency=1.000000, confidence=0.447514
+Derived: <ring_around_the_rosy <-> kicking_stone>. Priority=0.325691 Stamp=[16,15] Truth: frequency=1.000000, confidence=0.447514
+Derived: <kicking_stone <-> ring_around_the_rosy>. Priority=0.325691 Stamp=[16,15] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<ring_around_the_rosy --> $1> ==> <kicking_stone --> $1>>. Priority=0.217127 Stamp=[16,15] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<kicking_stone --> $1> ==> <ring_around_the_rosy --> $1>>. Priority=0.217127 Stamp=[16,15] Truth: frequency=1.000000, confidence=0.447514
+Input: <tomato --> [red]>. Priority=1.000000 Stamp=[17] Truth: frequency=1.000000, confidence=0.900000
+Selected: <tomato --> [red]>. Priority=1.000000 Stamp=[17] Truth: frequency=1.000000, confidence=0.900000
+Derived: <kicking_stone --> kicking_stone>. Priority=1.000000 Stamp=[16,16,14,14] Truth: frequency=1.000000, confidence=0.200269
+Input: <(tomato && blue_light) ==> (! <tomato --> [red]>)>. Priority=1.000000 Stamp=[18] Truth: frequency=1.000000, confidence=0.900000
+Input: <(tomato && blue_light) ==> (! <tomato --> [red]>)>. Priority=1.000000 Stamp=[18] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(tomato && blue_light) ==> (! <tomato --> [red]>)>. Priority=1.000000 Stamp=[18] Truth: frequency=1.000000, confidence=0.900000
+Input: <square_circle --> (square & circle)>. Priority=1.000000 Stamp=[19] Truth: frequency=1.000000, confidence=0.900000
+Selected: <square_circle --> (square & circle)>. Priority=1.000000 Stamp=[19] Truth: frequency=1.000000, confidence=0.900000
+Derived: <square_circle --> square>. Priority=0.452500 Stamp=[19] Truth: frequency=1.000000, confidence=0.810000
+Derived: <square_circle --> circle>. Priority=0.452500 Stamp=[19] Truth: frequency=1.000000, confidence=0.810000
+Input: <(square_circle && poem_context) ==> [exists]>. Priority=1.000000 Stamp=[20] Truth: frequency=1.000000, confidence=0.900000
+Input: <(square_circle && poem_context) ==> [exists]>. Priority=1.000000 Stamp=[20] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(square_circle && poem_context) ==> [exists]>. Priority=1.000000 Stamp=[20] Truth: frequency=1.000000, confidence=0.900000
+Input: <(<#1 --> 5yo> && <#1 --> [1.2m]>) ==> <#1 --> [tall]>>. Priority=1.000000 Stamp=[21] Truth: frequency=1.000000, confidence=0.900000
+Input: <(<#1 --> 5yo> && <#1 --> [1.2m]>) ==> <#1 --> [tall]>>. Priority=1.000000 Stamp=[21] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(<#1 --> 5yo> && <#1 --> [1.2m]>) ==> <#1 --> [tall]>>. Priority=1.000000 Stamp=[21] Truth: frequency=1.000000, confidence=0.900000
+Input: <(<#1 --> 30yo> && <#1 --> [1.2m]>) ==> <#1 --> [short]>>. Priority=1.000000 Stamp=[22] Truth: frequency=1.000000, confidence=0.900000
+Input: <(<#1 --> 30yo> && <#1 --> [1.2m]>) ==> <#1 --> [short]>>. Priority=1.000000 Stamp=[22] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(<#1 --> 30yo> && <#1 --> [1.2m]>) ==> <#1 --> [short]>>. Priority=1.000000 Stamp=[22] Truth: frequency=1.000000, confidence=0.900000
+Input: <life <-> ([grow] & [reproduce])>. Priority=1.000000 Stamp=[23] Truth: frequency=1.000000, confidence=0.900000
+Selected: <life <-> ([grow] & [reproduce])>. Priority=1.000000 Stamp=[23] Truth: frequency=1.000000, confidence=0.900000
+Derived: <([grow] & [reproduce]) <-> life>. Priority=0.272432 Stamp=[23] Truth: frequency=1.000000, confidence=0.810000
+Input: <{mule} --> life>. Priority=1.000000 Stamp=[24] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{mule} --> life>. Priority=1.000000 Stamp=[24] Truth: frequency=1.000000, confidence=0.900000
+Derived: <{mule} --> [grow reproduce]>. Priority=0.070655 Stamp=[24,23] Truth: frequency=1.000000, confidence=0.729000
+Input: <{mule} --> [reproduce]>. Priority=1.000000 Stamp=[25] Truth: frequency=1.000000, confidence=0.900000
+Selected: <{mule} --> [reproduce]>. Priority=1.000000 Stamp=[25] Truth: frequency=1.000000, confidence=0.900000
+Derived: <life --> [reproduce]>. Priority=0.251989 Stamp=[25,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[reproduce] --> life>. Priority=0.251989 Stamp=[25,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <life <-> [reproduce]>. Priority=0.251989 Stamp=[25,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[reproduce] <-> life>. Priority=0.251989 Stamp=[25,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{$1} --> life> ==> <{$1} --> [reproduce]>>. Priority=0.171085 Stamp=[25,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{$1} --> [reproduce]> ==> <{$1} --> life>>. Priority=0.171085 Stamp=[25,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{$1} --> [grow reproduce]> ==> <{$1} --> [reproduce]>>. Priority=0.011098 Stamp=[25,24,23] Truth: frequency=1.000000, confidence=0.396172
+Derived: <<{$1} --> [reproduce]> ==> <{$1} --> [grow reproduce]>>. Priority=0.011098 Stamp=[25,24,23] Truth: frequency=1.000000, confidence=0.396172
+Input: <fire --> life>. Priority=1.000000 Stamp=[26] Truth: frequency=1.000000, confidence=0.900000
+Selected: <fire --> life>. Priority=1.000000 Stamp=[26] Truth: frequency=1.000000, confidence=0.900000
+Derived: <fire --> [grow reproduce]>. Priority=0.066420 Stamp=[26,23] Truth: frequency=1.000000, confidence=0.729000
+Derived: <{mule} --> fire>. Priority=0.226790 Stamp=[26,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <fire --> {mule}>. Priority=0.226790 Stamp=[26,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <{mule} <-> fire>. Priority=0.226790 Stamp=[26,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <fire <-> {mule}>. Priority=0.226790 Stamp=[26,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<{mule} --> $1> ==> <fire --> $1>>. Priority=0.176477 Stamp=[26,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<fire --> $1> ==> <{mule} --> $1>>. Priority=0.176477 Stamp=[26,24] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<[reproduce] --> $1> ==> <fire --> $1>>. Priority=0.043936 Stamp=[26,25,24] Truth: frequency=1.000000, confidence=0.287121
+Derived: <<fire --> $1> ==> <[reproduce] --> $1>>. Priority=0.043936 Stamp=[26,25,24] Truth: frequency=1.000000, confidence=0.287121
+Input: <bird --> [feathered fly]>. Priority=1.000000 Stamp=[27] Truth: frequency=1.000000, confidence=0.900000
+Selected: <bird --> [feathered fly]>. Priority=1.000000 Stamp=[27] Truth: frequency=1.000000, confidence=0.900000
+Derived: <fire --> fire>. Priority=1.000000 Stamp=[26,26,24,24] Truth: frequency=1.000000, confidence=0.200269
+Derived: <[reproduce] --> [reproduce]>. Priority=1.000000 Stamp=[26,26,25,25,24,24] Truth: frequency=1.000000, confidence=0.115642
+Derived: <[reproduce] --> [grow reproduce]>. Priority=1.000000 Stamp=[26,26,23,25,24] Truth: frequency=1.000000, confidence=0.209311
+Derived: <[reproduce] --> {mule}>. Priority=1.000000 Stamp=[26,26,24,25,24] Truth: frequency=1.000000, confidence=0.128491
+Derived: <{mule} --> {mule}>. Priority=1.000000 Stamp=[26,26,24,24] Truth: frequency=1.000000, confidence=0.200269
+Derived: <bird --> [feathered]>. Priority=0.350102 Stamp=[27] Truth: frequency=1.000000, confidence=0.810000
+Derived: <bird --> [fly]>. Priority=0.350102 Stamp=[27] Truth: frequency=1.000000, confidence=0.810000
+Input: <penguin --> (bird & (! [fly]))>. Priority=1.000000 Stamp=[28] Truth: frequency=1.000000, confidence=0.900000
+Selected: <penguin --> (bird & (! [fly]))>. Priority=1.000000 Stamp=[28] Truth: frequency=1.000000, confidence=0.900000
+Derived: <penguin --> bird>. Priority=0.452500 Stamp=[28] Truth: frequency=1.000000, confidence=0.810000
+Derived: <penguin --> (! [fly])>. Priority=0.301667 Stamp=[28] Truth: frequency=1.000000, confidence=0.810000
+Input: <bat --> ([fly] & (! bird))>. Priority=1.000000 Stamp=[29] Truth: frequency=1.000000, confidence=0.900000
+Selected: <bat --> ([fly] & (! bird))>. Priority=1.000000 Stamp=[29] Truth: frequency=1.000000, confidence=0.900000
+Derived: <bat --> [fly]>. Priority=0.350102 Stamp=[29] Truth: frequency=1.000000, confidence=0.810000
+Derived: <bat --> (! bird)>. Priority=0.350102 Stamp=[29] Truth: frequency=1.000000, confidence=0.810000
+Input: <justice <-> [give_due]>. Priority=1.000000 Stamp=[30] Truth: frequency=1.000000, confidence=0.900000
+Selected: <justice <-> [give_due]>. Priority=1.000000 Stamp=[30] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[give_due] <-> justice>. Priority=0.350102 Stamp=[30] Truth: frequency=1.000000, confidence=0.810000
+Input: <(justice * theory) --> [dependent]>. Priority=1.000000 Stamp=[31] Truth: frequency=1.000000, confidence=0.900000
+Selected: <(justice * theory) --> [dependent]>. Priority=1.000000 Stamp=[31] Truth: frequency=1.000000, confidence=0.900000
+Derived: <justice --> ([dependent] /1 theory)>. Priority=0.301667 Stamp=[31] Truth: frequency=1.000000, confidence=0.810000
+Derived: <theory --> ([dependent] /2 justice)>. Priority=0.301667 Stamp=[31] Truth: frequency=1.000000, confidence=0.810000
+Input: <understand <-> [correct_usage]>. Priority=1.000000 Stamp=[32] Truth: frequency=1.000000, confidence=0.900000
+Selected: <understand <-> [correct_usage]>. Priority=1.000000 Stamp=[32] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[correct_usage] <-> understand>. Priority=0.350102 Stamp=[32] Truth: frequency=1.000000, confidence=0.810000
+Input: <parrot --> [correct_usage]>. Priority=1.000000 Stamp=[33] Truth: frequency=1.000000, confidence=0.900000
+Selected: <parrot --> [correct_usage]>. Priority=1.000000 Stamp=[33] Truth: frequency=1.000000, confidence=0.900000
+Derived: <parrot --> understand>. Priority=0.407250 Stamp=[33,32] Truth: frequency=1.000000, confidence=0.810000
+Input: <parrot --> [understand]>. Priority=1.000000 Stamp=[34] Truth: frequency=1.000000, confidence=0.900000
+Selected: <parrot --> [understand]>. Priority=1.000000 Stamp=[34] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[correct_usage] --> [understand]>. Priority=0.217127 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[understand] --> [correct_usage]>. Priority=0.217127 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[correct_usage] <-> [understand]>. Priority=0.217127 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.447514
+Derived: <[understand] <-> [correct_usage]>. Priority=0.217127 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.447514
+Derived: <parrot --> [understand correct_usage]>. Priority=0.315092 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.810000
+Derived: <parrot --> [correct_usage understand]>. Priority=0.315092 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.810000
+Derived: <<$1 --> [correct_usage]> ==> <$1 --> [understand]>>. Priority=0.181698 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<$1 --> [understand]> ==> <$1 --> [correct_usage]>>. Priority=0.181698 Stamp=[34,33] Truth: frequency=1.000000, confidence=0.447514
+Derived: <<$1 --> understand> ==> <$1 --> [understand]>>. Priority=0.078428 Stamp=[34,33,32] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<parrot --> $1> ==> <parrot --> [$1]>>. Priority=0.078428 Stamp=[34,33,32] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<$1 --> [understand]> ==> <$1 --> understand>>. Priority=0.078428 Stamp=[34,33,32] Truth: frequency=1.000000, confidence=0.421631
+Derived: <<parrot --> [$1]> ==> <parrot --> $1>>. Priority=0.078428 Stamp=[34,33,32] Truth: frequency=1.000000, confidence=0.421631
+Input: <zombie_philosophical --> (human_physical & (! [conscious]))>. Priority=1.000000 Stamp=[35] Truth: frequency=1.000000, confidence=0.900000
+Selected: <zombie_philosophical --> (human_physical & (! [conscious]))>. Priority=1.000000 Stamp=[35] Truth: frequency=1.000000, confidence=0.900000
+Derived: <parrot --> correct_usage>. Priority=1.000000 Stamp=[33,34,33,32] Truth: frequency=1.000000, confidence=0.379468
+Derived: <parrot --> [[understand]]>. Priority=1.000000 Stamp=[34,34,33,32] Truth: frequency=1.000000, confidence=0.379468
+Derived: <parrot --> [[correct_usage understand]]>. Priority=1.000000 Stamp=[34,34,33,33,32] Truth: frequency=1.000000, confidence=0.341521
+Derived: <parrot --> [[understand correct_usage]]>. Priority=1.000000 Stamp=[34,34,33,33,32] Truth: frequency=1.000000, confidence=0.341521
+Derived: <parrot --> [[[correct_usage]]]>. Priority=1.000000 Stamp=[34,34,32,33,32] Truth: frequency=1.000000, confidence=0.307369
+Derived: <parrot --> [[[understand]]]>. Priority=1.000000 Stamp=[34,34,34,33,33,32,32] Truth: frequency=1.000000, confidence=0.159995
+Derived: <[correct_usage] --> [correct_usage]>. Priority=1.000000 Stamp=[34,34,33,33] Truth: frequency=1.000000, confidence=0.200269
+Derived: <[understand] --> [understand]>. Priority=1.000000 Stamp=[34,34,33,33] Truth: frequency=1.000000, confidence=0.200269
+Derived: <[understand] --> understand>. Priority=1.000000 Stamp=[34,34,34,33,33,32,33] Truth: frequency=1.000000, confidence=0.084439
+Derived: <[correct_usage] --> understand>. Priority=1.000000 Stamp=[34,34,33,33,32] Truth: frequency=1.000000, confidence=0.188686
+Derived: <zombie_philosophical --> human_physical>. Priority=0.452500 Stamp=[35] Truth: frequency=1.000000, confidence=0.810000
+Derived: <zombie_philosophical --> (! [conscious])>. Priority=0.301667 Stamp=[35] Truth: frequency=1.000000, confidence=0.810000
+Input: <zombie_hollywood --> (human_corpse & [hungry])>. Priority=1.000000 Stamp=[36] Truth: frequency=1.000000, confidence=0.900000
+Selected: <zombie_hollywood --> (human_corpse & [hungry])>. Priority=1.000000 Stamp=[36] Truth: frequency=1.000000, confidence=0.900000
+Derived: <parrot --> [[[[understand]]]]>. Priority=1.000000 Stamp=[34,34,34,33,34,32,33,33,32,32] Truth: frequency=1.000000, confidence=0.067459
+Derived: <parrot --> [[[correct_usage understand]]]>. Priority=1.000000 Stamp=[34,34,34,33,33,32,33,32] Truth: frequency=1.000000, confidence=0.143996
+Derived: <parrot --> [[[understand correct_usage]]]>. Priority=1.000000 Stamp=[34,34,34,33,33,32,33,32] Truth: frequency=1.000000, confidence=0.143996
+Derived: <parrot --> [[[[correct_usage]]]]>. Priority=1.000000 Stamp=[34,34,34,33,32,32,33,32] Truth: frequency=1.000000, confidence=0.129596
+Derived: <zombie_hollywood --> human_corpse>. Priority=0.452500 Stamp=[36] Truth: frequency=1.000000, confidence=0.810000
+Derived: <zombie_hollywood --> [hungry]>. Priority=0.350102 Stamp=[36] Truth: frequency=1.000000, confidence=0.810000
+Input: <zombie_hollywood <-> zombie_philosophical>. Priority=1.000000 Stamp=[37] Truth: frequency=1.000000, confidence=0.900000
+Selected: <zombie_hollywood <-> zombie_philosophical>. Priority=1.000000 Stamp=[37] Truth: frequency=1.000000, confidence=0.900000
+Derived: <parrot --> [[[[understand correct_usage]]]]>. Priority=1.000000 Stamp=[34,34,34,33,34,32,33,33,32,33] Truth: frequency=1.000000, confidence=0.060713
+Derived: <parrot --> [[[[correct_usage understand]]]]>. Priority=1.000000 Stamp=[34,34,34,33,34,32,33,33,32,33] Truth: frequency=1.000000, confidence=0.060713
+Derived: <zombie_philosophical <-> zombie_hollywood>. Priority=0.452500 Stamp=[37] Truth: frequency=1.000000, confidence=0.810000
+Input: <proof <-> (argument && [convincing])>. Priority=1.000000 Stamp=[38] Truth: frequency=1.000000, confidence=0.900000
+Selected: <proof <-> (argument && [convincing])>. Priority=1.000000 Stamp=[38] Truth: frequency=1.000000, confidence=0.900000
+Derived: <(argument && [convincing]) <-> proof>. Priority=0.301667 Stamp=[38] Truth: frequency=1.000000, confidence=0.810000
+Input: <([convincing] * audience) --> [relative]>. Priority=1.000000 Stamp=[39] Truth: frequency=1.000000, confidence=0.900000
+Selected: <([convincing] * audience) --> [relative]>. Priority=1.000000 Stamp=[39] Truth: frequency=1.000000, confidence=0.900000
+Derived: <[convincing] --> ([relative] /1 audience)>. Priority=0.272432 Stamp=[39] Truth: frequency=1.000000, confidence=0.810000
+Derived: <audience --> ([relative] /2 [convincing])>. Priority=0.272432 Stamp=[39] Truth: frequency=1.000000, confidence=0.810000
+Input: <{pope} --> bachelor>?
+Answer: <{pope} --> bachelor>. creationTime=10 Stamp=[9,10,8] Truth: frequency=1.000000, confidence=0.929889
+Statistics
+----------
+countConceptsMatchedTotal:	297
+countConceptsMatchedMax:	33
+countConceptsMatchedAverage:	7
+currentTime:			40
+total concepts:			248
+DeclarativeImplicationTableMaxItems:	2
+TemporalImplicationTableMaxItems:	1
+current average concept priority:	0.004185
+current average concept usefulness:	0.022047
+current belief events cnt:		40
+current goal events cnt:		0
+Count atomic terms used:		140
+current average belief event priority:	0.341275
+current average goal event priority:	0.000000
+Maximum chain length in concept hashtable: 2
+Maximum chain length in atoms hashtable: 4
