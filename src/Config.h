@@ -137,9 +137,11 @@
 //Maximum Implication table size
 #define TABLE_SIZE 120
 //Maximum compound term size
-#define COMPOUND_TERM_SIZE_MAX 64
+//#define COMPOUND_TERM_SIZE_MAX 64
+#define COMPOUND_TERM_SIZE_MAX 512
 //Max. amount of atomic terms, must be <= 2^(sizeof(Atom)*8)
-#define ATOMS_MAX 255
+// #define ATOMS_MAX 255
+#define ATOMS_MAX 65536
 //Amount of buckets for atoms hashmap
 #define ATOMS_HASHTABLE_BUCKETS ATOMS_MAX
 //The type of an atom
