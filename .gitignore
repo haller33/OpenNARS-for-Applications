@@ -11,3 +11,6 @@ NAR.dSYM/
 # For Clangd
 .cache/
 compile_commands.json
+libONA.a
+libONA.so
+.venv
